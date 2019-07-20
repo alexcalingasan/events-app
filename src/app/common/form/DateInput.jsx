@@ -14,7 +14,7 @@ const DateInput = ({
     <Form.Field error={touched && !!error}>
       <DatePicker
         {...rest}
-        placeholder={placeholder}
+        placeholderText={placeholder}
         width={width}
         selected={input.value ? new Date(input.value) : null}
         onChange={input.onChange}
