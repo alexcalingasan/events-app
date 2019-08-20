@@ -8,11 +8,9 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { configureStore } from "./app/store/configureStore";
 import ScrollToTop from "./app/common/util/scrollToTop";
-import { loadEvents } from "./features/event/eventActions";
 import ReduxToastr from "react-redux-toastr";
 
 const store = configureStore();
-store.dispatch(loadEvents());
 
 ReactDOM.render(
   <Provider store={store}>
